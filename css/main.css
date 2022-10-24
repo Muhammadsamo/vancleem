@@ -188,6 +188,7 @@ a {
   line-height: 35px;
   letter-spacing: 0.1em;
   color: #f0f7fa;
+  margin-block: 1rem;
 }
 
 .section-home__left__contact-btn {
