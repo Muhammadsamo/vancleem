@@ -81,6 +81,7 @@ a {
   line-height: 49px;
   letter-spacing: 0.1em;
   color: #dab658;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -172,13 +173,9 @@ a {
 }
 
 .section-home__left__heading {
-  max-width: 636px;
-  min-height: 44px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 44px;
-  color: #dab658;
+  letter-spacing: 0;
 }
 
 .section-home__left__para {
