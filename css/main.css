@@ -168,6 +168,7 @@ a {
 .section-home {
   background-image: url("../images/image\ 10.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-home__left__heading {
