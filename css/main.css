@@ -86,7 +86,7 @@ a {
 .card {
   /* max-width: 404px; */
   height: 660px;
-  background: rgba(253, 254, 254, 0.8);
+  background: #fbfcfb;
   border: 1px solid #e3d9cd;
   padding: 16px;
   margin: 16px 0;
@@ -294,6 +294,7 @@ a {
 
 .section-case-studies {
   padding: 74px 0;
+  background-color: #f5f2ef;
 }
 
 .section-case-studies__card__title {
