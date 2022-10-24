@@ -4,7 +4,8 @@
 *::before,
 *::after,
 ul,
-ol {
+ol,
+p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,6 +26,7 @@ a {
 
 .primary-button {
   background: radial-gradient(50% 50% at 50% 50%, #dab658 0%, #c6a34f 100%);
+  /* background-color: #cba751; */
   border: 2px solid #c6a34f;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -146,6 +148,16 @@ a {
   color: #271c1a;
 }
 
+.main-nav__list__item a {
+  padding-block: 16px;
+  color: #271c1a;
+}
+
+.main-nav__list__item a:hover {
+  color: #607345;
+  border-bottom: 4px solid #343e25;
+}
+
 .main-nav__list > li:nth-child(1) {
   padding-left: 0;
 }
@@ -188,10 +200,12 @@ a {
   font-size: 25px;
   line-height: 30px;
   letter-spacing: 0.1em;
+  padding: 8px 12px;
 }
 
-.section-home__left__contact-btn:hover {
-  background-color: #ddbd68;
+.primary-button:hover {
+  background: #ddbd68;
+  color: #2b331f;
 }
 
 .section-home__left__resume-btn {
@@ -206,7 +220,7 @@ a {
 }
 
 .section-home__left__resume-btn:hover {
-  background-color: #607345;
+  background-color: #343e25;
 }
 
 /* Section-Solutions */
@@ -372,4 +386,25 @@ a {
   line-height: 30px;
   letter-spacing: 0.1em;
   color: #001218;
+}
+
+/* Footer */
+
+.footer {
+  min-height: 68px;
+  background-color: #2d1810;
+  color: #e1c478;
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+.footer > .container {
+  min-height: 68px;
+}
+
+.social-links span {
+  margin: 0 8px;
 }
