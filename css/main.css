@@ -375,6 +375,12 @@ a {
   margin-block: 1rem;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: none;
+  box-shadow: none;
+}
+
 .contact-form textarea {
   min-height: 130px !important;
 }
