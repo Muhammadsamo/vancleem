@@ -6,16 +6,6 @@ const mobileNavBtnBurger = document.querySelector(".mobile-nav-btn__burger");
 
 copyRightSpan.textContent = currentYear;
 
-// menuBtn.addEventListener("click", () => {
-//   if (mobileNav.display === "none") {
-//     mobileNav.display === "flex";
-//   } else {
-//     mobileNav.display === "none";
-//   }
-// });
-
-// menuBtn.addEventListener("click", console.log("clicked"));
-
 let showMenu = false;
 
 menuBtn.addEventListener("click", () => {
