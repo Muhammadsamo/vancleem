@@ -12,8 +12,11 @@ p {
 }
 
 html {
-  font-family: "Archivo", sans-serif;
   font-size: 100%;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
 }
 
 ul {
@@ -291,8 +294,8 @@ a {
 }
 
 .section-case-studies {
-  padding: 74px 0;
-  background-color: #f5f2ef;
+  padding: 74px;
+  background: url("../images/Rectangle\ 98.png");
 }
 
 .section-case-studies__card__title {
