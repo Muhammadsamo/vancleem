@@ -837,7 +837,9 @@ main {
   }
 
   .section-solutions__cards,
-  .section-use-cases__cards {
+  .section-use-cases__cards,
+  .section-contact > .container,
+  .section-skills > .container {
     flex-direction: column;
   }
 
@@ -849,6 +851,10 @@ main {
 
   .section-use-cases__card__description {
     max-width: 100%;
+  }
+
+  .section-contact > .container {
+    flex-direction: column;
   }
 
   .contact-form-btn {
@@ -885,12 +891,11 @@ main {
     align-self: auto;
   }
 
-  .section-solutions__cards,
+  /* .section-solutions__cards,
   .section-use-cases__cards,
-  .section-skills > .container,
-  .section-contact > .container {
+  .section-skills > .container{
     flex-direction: column;
-  }
+  } */
 
   .contact-form {
     margin-top: 1rem;
