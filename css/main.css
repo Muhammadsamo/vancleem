@@ -319,7 +319,6 @@ main {
 
 .section-home__left__contact-btn:hover {
   color: #0c0c0f;
-  /* background: #8baec2; */
 }
 
 .section-home__left__linkedin-btn {
@@ -478,6 +477,7 @@ main {
   line-height: 24px;
   letter-spacing: -0.04em;
   color: #fafcfd;
+  width: 35%;
 }
 
 .skill-description {
@@ -546,10 +546,6 @@ main {
   margin-bottom: 1rem;
   line-height: 30px;
 }
-
-/* .section-use-cases__card__subtitle {
-  margin-bottom: 1rem;
-} */
 
 .section-use-cases__card__description {
   font-weight: 500;
@@ -852,7 +848,7 @@ main {
   }
 
   .section-use-cases__card__description {
-    max-width: auto;
+    max-width: 100%;
   }
 
   .contact-form-btn {
@@ -879,6 +875,10 @@ main {
   .section-contact__left,
   .section-contact__right {
     width: 100%;
+  }
+
+  .section-skills__left {
+    margin-bottom: 4rem;
   }
 
   .section-use-cases__card {

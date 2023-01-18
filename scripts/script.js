@@ -2,7 +2,6 @@ let currentYear = new Date().getFullYear();
 const copyRightSpan = document.querySelector(".copy-right-year");
 const menuBtn = document.querySelector(".mobile-nav-btn");
 const mobileNav = document.querySelector(".mobile-nav");
-const mobileNavLinks = document.querySelectorAll(".mobile-nav__list__item a");
 const mobileNavBtnBurger = document.querySelector(".mobile-nav-btn__burger");
 let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".main-nav ul li a");
@@ -58,11 +57,3 @@ window.onscroll = () => {
     }
   });
 };
-
-// To Close the menu when a link is clicked
-
-// mobileNavLinks.forEach((link) => {
-//   link.addEventListener("click", () => {
-//     mobileNavCLose();
-//   });
-// });
