@@ -902,10 +902,10 @@ main {
   .section-heading2 {
     font-size: 2rem;
   }
-  .section-home__left__buttons {
+  /* .section-home__left__buttons {
     flex-direction: column;
     gap: 1rem;
-  }
+  } */
 
   .section-solutions__para {
     margin-top: 1rem;
