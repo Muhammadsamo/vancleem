@@ -28,6 +28,19 @@ a {
   text-decoration: none;
 }
 
+/* Elements with z-index higher than 0 */
+.section-skills__left__heading1,
+.section-skills__left__heading2,
+.section-skills__left__description,
+.section-skills__left__screen-img,
+.section-solutions__heading1,
+.section-solutions__heading2,
+.section-solutions__para,
+.section-skills {
+  position: relative;
+  z-index: 2;
+}
+
 .primary-button {
   color: #0c0c0f;
   background: #759eb6;
@@ -334,6 +347,29 @@ main {
   background: #152128;
   padding-inline: 63.4496px;
   padding-block: 65px 68px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-elipse1 {
+  position: absolute;
+  width: 637.61px;
+  height: 749.2px;
+  background: #1b2a33;
+  filter: blur(60px);
+  border-radius: 50%;
+  top: -400px;
+  left: -330px;
+}
+.overlay-elipse2 {
+  position: absolute;
+  width: 683.7px;
+  height: 1019.64px;
+  background: #1b2a33;
+  filter: blur(100px);
+  border-radius: 50%;
+  bottom: -435px;
+  right: -355px;
 }
 
 .section-solutions__para {
@@ -374,10 +410,18 @@ main {
 }
 
 .section-skills {
-  position: relative;
   background-image: url("../images/Rectangle\ 23.png");
   background-size: cover;
-  z-index: 1;
+}
+
+.overlay-elipse3 {
+  position: absolute;
+  width: 1013px;
+  height: 1013px;
+  background: #1b2a33;
+  filter: blur(282px);
+  top: -400px;
+  left: -290px;
 }
 
 .section-skills__backdrop {
