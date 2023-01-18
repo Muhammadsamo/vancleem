@@ -15,7 +15,7 @@ let showMenu = false;
 
 function mobileNavOpen() {
   mobileNavBtnBurger.classList.add("open");
-  mobileNav.style.transform = "translateY(7%)";
+  mobileNav.style.transform = "translateY(5%)";
 
   showMenu = true;
 }
@@ -24,7 +24,7 @@ function mobileNavOpen() {
 
 function mobileNavCLose() {
   mobileNavBtnBurger.classList.remove("open");
-  mobileNav.style.transform = "translateY(-117%)";
+  mobileNav.style.transform = "translateY(-110%)";
 
   showMenu = false;
 }
