@@ -397,7 +397,7 @@ main {
 }
 
 .section-skills__left__heading2 {
-  width: 465px;
+  max-width: 465px;
   margin-block: 10px 30px;
 }
 
@@ -462,7 +462,7 @@ main {
   line-height: 75px;
   letter-spacing: -0.04em;
   color: #f5f6f8;
-  width: 768.65px;
+  max-width: 768.65px;
 }
 
 .section-use-cases__description {
@@ -471,7 +471,7 @@ main {
   font-size: 16px;
   line-height: 30px;
   color: #fafcfd;
-  width: 802px;
+  max-width: 802px;
 }
 
 .section-use-cases__cards {
