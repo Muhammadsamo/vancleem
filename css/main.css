@@ -308,11 +308,9 @@ main {
 }
 
 .section-home__left__contact-btn {
-  height: 55px;
   font-style: normal;
   font-weight: 600;
   font-size: 1.5625rem;
-  line-height: 30px;
   letter-spacing: 0.1em;
   padding: 9px 0;
   width: 9.1875rem;
