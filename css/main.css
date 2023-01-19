@@ -313,8 +313,9 @@ main {
   font-size: 1.5625rem;
   line-height: 30px;
   letter-spacing: 0.1em;
-  padding: 9px 18px;
+  padding: 9px 0;
   width: 9.1875rem;
+  text-align: center;
 }
 
 .section-home__left__contact-btn:hover {
@@ -621,10 +622,14 @@ main {
 .section-contact__left__contact-location > span:nth-child(2),
 .section-contact__left__contact-phone > span:nth-child(2),
 .section-contact__left__contact-email > span:nth-child(2),
-.section-contact__left__contact-linkedin > span:nth-child(2) {
+.section-contact__left__contact-linkedin > a {
   font-size: 18px;
   line-height: 20px;
   color: #fdfdfd;
+}
+
+.section-contact__left__contact-linkedin > a:hover {
+  border-bottom: 2px solid #759eb6;
 }
 
 .section-contact__left__contact-location,
