@@ -855,7 +855,9 @@ main {
   .section-solutions__card,
   .section-use-cases__card,
   .section-skills__left,
-  .section-skills__right {
+  .section-skills__right,
+  .section-contact__left,
+  .section-contact__right {
     margin-block: 2rem;
     width: 100%;
   }
@@ -886,9 +888,7 @@ main {
     display: block;
   }
 
-  .section-home__left,
-  .section-contact__left,
-  .section-contact__right {
+  .section-home__left {
     width: 100%;
   }
 
