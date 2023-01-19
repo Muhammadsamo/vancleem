@@ -841,6 +841,10 @@ main {
     max-width: 700px;
   }
 
+  .section-use-cases__heading2 {
+    line-height: initial;
+  }
+
   .section-solutions__cards,
   .section-use-cases__cards,
   .section-contact > .container,
@@ -849,7 +853,9 @@ main {
   }
 
   .section-solutions__card,
-  .section-use-cases__card {
+  .section-use-cases__card,
+  .section-skills__left,
+  .section-skills__right {
     margin-block: 2rem;
     width: 100%;
   }
@@ -881,8 +887,6 @@ main {
   }
 
   .section-home__left,
-  .section-skills__left,
-  .section-skills__right,
   .section-contact__left,
   .section-contact__right {
     width: 100%;
@@ -895,12 +899,6 @@ main {
   .section-use-cases__card {
     align-self: auto;
   }
-
-  /* .section-solutions__cards,
-  .section-use-cases__cards,
-  .section-skills > .container{
-    flex-direction: column;
-  } */
 
   .contact-form {
     margin-top: 1rem;
