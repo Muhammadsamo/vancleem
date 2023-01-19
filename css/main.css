@@ -92,8 +92,9 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 11.649px;
-  line-height: 35px;
+  line-height: 20px;
   color: #eff4f7;
+  margin-block: 0.5rem;
 }
 
 .card-description {
@@ -326,7 +327,6 @@ main {
   font-style: normal;
   font-weight: 500;
   font-size: 1.5625rem;
-  line-height: 30px;
   padding: 9px 18px;
   width: 9.5rem;
   color: #759eb6;
@@ -387,6 +387,11 @@ main {
 .section-solutions__card {
   align-self: normal;
   margin-block: 2rem;
+}
+
+.section-solutions__card__title {
+  line-height: 30px;
+  margin-top: 1rem;
 }
 
 .section-solutions__cards {
@@ -538,6 +543,7 @@ main {
 .section-use-cases__card {
   background: #152128;
   min-height: 737.24px;
+  align-self: normal;
 }
 .section-use-cases__card-body {
   padding: 31.51px 29px;
