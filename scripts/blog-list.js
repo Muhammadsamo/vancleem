@@ -1,9 +1,16 @@
 let nexusBotBtn = document.querySelector(".chatbot");
 let chatBotChat = document.querySelector("section-4_chatbot");
+let chatBotClose = document.querySelector(".chatbot-cut_icon");
 let chatTextArea = document.querySelector(".chat-textarea");
 let chatPara = document.querySelector(".chat-paragraphes");
 let chatBoxHtml = "";
 let nexusBotHidden = false;
+
+chatBotClose.addEventListener("click", () => {
+  nexusBotHidden = true;
+  nexusBotBtn.classList.add("chatbot_js");
+  console.log("clicked");
+});
 
 nexusBotBtn.addEventListener("click", () => {
   if (!nexusBotHidden) {
