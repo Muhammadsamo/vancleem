@@ -7,7 +7,6 @@ let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".main-nav ul li a");
 
 copyRightSpan.textContent = currentYear;
-
 let showMenu = false;
 
 // Function to open Mobile Nav menu
@@ -15,7 +14,6 @@ let showMenu = false;
 function mobileNavOpen() {
   mobileNavBtnBurger.classList.add("open");
   mobileNav.style.transform = "translateY(5%)";
-
   showMenu = true;
 }
 
