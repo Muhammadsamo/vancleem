@@ -204,7 +204,9 @@ a {
 }
 
 .main-nav__list__item:last-child a:hover,
-.mobile-nav__list__item:last-child a:hover {
+.mobile-nav__list__item:last-child a:hover,
+.main-nav__list__item:nth-child(6) a:hover,
+.mobile-nav__list__item:nth-child(6) a:hover {
   background: #8baec2;
   color: #0c0c0f;
 }
