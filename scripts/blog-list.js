@@ -39,10 +39,10 @@ $.fn.isInViewport = function () {
 $(window).on("resize scroll", function () {
   if (!nexusBotStrictClose) {
     if ($("#chat-bot-chat").isInViewport()) {
-      $('.chatbot').addClass("chatbot_js");
-      nexusBotHidden = true;
+      $(".chatbot").addClass("chatbot_js2");
+      // nexusBotHidden = true;
     } else {
-      $('.chatbot').removeClass("chatbot_js");
+      $(".chatbot").removeClass("chatbot_js2 chatbot_js");
       nexusBotHidden = false;
     }
   }
@@ -50,7 +50,7 @@ $(window).on("resize scroll", function () {
 
 $(window).on("load", function () {
   if ($("#chat-bot-chat").isInViewport()) {
-    $('.chatbot').addClass("chatbot_js");
+    $(".chatbot").addClass("chatbot_js");
     nexusBotHidden = true;
   }
 });
@@ -69,20 +69,19 @@ $(".chat-submit").on("click", function () {
   }
 });
 
-$('.tool-name').on('click', function() {
-  var toolId = $(this).attr('id');
+$(".tool-name").on("click", function () {
+  var toolId = $(this).attr("id");
   console.log(toolId);
-  $('.tool-name').removeClass('active-tool');
-  $(this).addClass('active-tool');
+  $(".tool-name").removeClass("active-tool");
+  $(this).addClass("active-tool");
 
-  $('.blog').each(function() {
+  $(".blog").each(function () {
     if ($(this).hasClass(toolId)) {
-      console.log('working if')
-      $(this).removeClass('chatbot_js');
+      console.log("working if");
+      $(this).removeClass("chatbot_js");
     } else {
-      console.log('working else')
-      $(this).addClass('chatbot_js');
+      console.log("working else");
+      $(this).addClass("chatbot_js");
     }
   });
-
 });

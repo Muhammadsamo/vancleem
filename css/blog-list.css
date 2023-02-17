@@ -291,6 +291,10 @@ body {
   display: none;
 }
 
+.chatbot_js2 {
+  left: 3% !important;
+}
+
 .chatbot-cut_icon i {
   font-size: 28px;
   color: #3e6176;
