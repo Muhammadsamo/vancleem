@@ -71,6 +71,11 @@ body {
   cursor: pointer;
 }
 
+.tool-name:hover,
+.active-tool {
+  background: #759eb6;
+  color: #152128;
+}
 /* section-3 */
 
 .blog-list {

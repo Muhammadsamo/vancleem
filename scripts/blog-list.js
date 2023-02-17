@@ -39,10 +39,10 @@ $.fn.isInViewport = function () {
 $(window).on("resize scroll", function () {
   if (!nexusBotStrictClose) {
     if ($("#chat-bot-chat").isInViewport()) {
-      nexusBotBtn.classList.add("chatbot_js");
+      $('.chatbot').addClass("chatbot_js");
       nexusBotHidden = true;
     } else {
-      nexusBotBtn.classList.remove("chatbot_js");
+      $('.chatbot').removeClass("chatbot_js");
       nexusBotHidden = false;
     }
   }
@@ -50,7 +50,7 @@ $(window).on("resize scroll", function () {
 
 $(window).on("load", function () {
   if ($("#chat-bot-chat").isInViewport()) {
-    nexusBotBtn.classList.add("chatbot_js");
+    $('.chatbot').addClass("chatbot_js");
     nexusBotHidden = true;
   }
 });
@@ -67,4 +67,22 @@ $(".chat-submit").on("click", function () {
     </div>`;
     $(".chat-paragraphes").html(chatBoxHtml);
   }
+});
+
+$('.tool-name').on('click', function() {
+  var toolId = $(this).attr('id');
+  console.log(toolId);
+  $('.tool-name').removeClass('active-tool');
+  $(this).addClass('active-tool');
+
+  $('.blog').each(function() {
+    if ($(this).hasClass(toolId)) {
+      console.log('working if')
+      $(this).removeClass('chatbot_js');
+    } else {
+      console.log('working else')
+      $(this).addClass('chatbot_js');
+    }
+  });
+
 });
