@@ -5,9 +5,11 @@ let chatTextArea = document.querySelector(".chat-textarea");
 let chatPara = document.querySelector(".chat-paragraphes");
 let chatBoxHtml = "";
 let nexusBotHidden = false;
+let nexusBotStrictClose = false;
 
 chatBotClose.addEventListener("click", () => {
   nexusBotHidden = true;
+  nexusBotStrictClose = true;
   nexusBotBtn.classList.add("chatbot_js");
   console.log("clicked");
 });
@@ -35,12 +37,14 @@ $.fn.isInViewport = function () {
 };
 
 $(window).on("resize scroll", function () {
-  if ($("#chat-bot-chat").isInViewport()) {
-    nexusBotBtn.classList.add("chatbot_js");
-    nexusBotHidden = true;
-  } else {
-    nexusBotBtn.classList.remove("chatbot_js");
-    nexusBotHidden = false;
+  if (!nexusBotStrictClose) {
+    if ($("#chat-bot-chat").isInViewport()) {
+      nexusBotBtn.classList.add("chatbot_js");
+      nexusBotHidden = true;
+    } else {
+      nexusBotBtn.classList.remove("chatbot_js");
+      nexusBotHidden = false;
+    }
   }
 });
 
