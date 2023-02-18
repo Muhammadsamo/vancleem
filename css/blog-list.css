@@ -108,7 +108,6 @@ body {
 .section-3_flex__container___1 {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   overflow: hidden;
   position: relative;
@@ -155,32 +154,20 @@ body {
 .blog-details {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 1.875rem;
 }
 
 .blog-date {
   margin: 0;
   margin-top: 29px;
-  width: 323px;
   font-size: 14px;
   font-weight: 700;
   color: #759eb6;
 }
 
-.blog-date_underline {
-  margin-top: 8px;
-  margin-bottom: 16px;
-  height: 2px;
-  width: 60px;
-  background: #759eb6;
-  position: relative;
-  right: 130px;
-}
-
 .blog-title {
   margin: 0;
   margin-bottom: 18px;
-  width: 323px;
   font-size: 19px;
   font-weight: 800;
   line-height: 24px;
@@ -190,7 +177,6 @@ body {
 .blog-description {
   margin: 0;
   line-height: 28px;
-  width: 323px;
   font-size: 16px;
   font-weight: 500;
   color: #fafcfd;
@@ -323,8 +309,6 @@ body {
 
 .section-4_parent {
   display: flex;
-  /* flex-wrap: wrap; */
-  align-items: center;
   justify-content: space-between;
   margin: 80px;
   position: relative;
@@ -567,35 +551,6 @@ body {
     left: 59%;
   }
 
-  /* .blog {
-    margin-left: 20px;
-    margin-right: 20px;
-  } */
-
-  .blog-details {
-    width: 240px;
-  }
-
-  .blog-date {
-    width: 200px;
-  }
-
-  .blog-date_underline {
-    right: 70px;
-  }
-
-  .blog-title {
-    width: 200px;
-  }
-
-  .blog-description {
-    width: 200px;
-  }
-
-  .wrapper {
-    max-width: 1100px;
-  }
-
   .section-4_parent {
     margin: 80px 35px;
   }
@@ -633,7 +588,6 @@ body {
   .section-4_parent {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     margin: 0;
     position: relative;
@@ -642,10 +596,7 @@ body {
 
   .section-4_chatbot {
     margin-top: 40px;
-  }
-
-  .wrapper {
-    max-width: 990px;
+    max-width: 100%;
   }
 }
 
@@ -653,11 +604,6 @@ body {
   /* .chatbot {
     left: 66.7%;
   } */
-
-  .blog {
-    width: 640px;
-    height: 670px;
-  }
 
   .main-header_logo h1 {
     font-size: 18px;
@@ -687,36 +633,18 @@ body {
   }
 
   .blog-details {
-    width: 640px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
 
   .blog-date {
     font-size: 18px;
-    text-align: center;
-  }
-
-  .blog-date_underline {
-    width: 80px;
-    right: 4px;
   }
 
   .blog-title {
-    width: 530px;
     font-size: 26px;
-    text-align: center;
-    margin-top: 12px;
     line-height: 34px;
-  }
-
-  .blog-description {
-    width: 530px;
-    font-size: 22px;
-    text-align: center;
-    margin-top: 12px;
   }
 
   .hero-section {
