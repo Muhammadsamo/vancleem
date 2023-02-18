@@ -296,6 +296,10 @@ body {
   z-index: 1;
 }
 
+#section-4 .container {
+  padding-top: 111px;
+}
+
 .section-4_blur-circle {
   position: absolute;
   width: 611px;
@@ -310,9 +314,7 @@ body {
 .section-4_parent {
   display: flex;
   justify-content: space-between;
-  margin: 80px;
   position: relative;
-  top: 111px;
 }
 
 .main-header_logo h1 {

@@ -7,9 +7,22 @@ body {
   margin-bottom: 1rem;
 }
 
+.blog-post_blur-circle {
+  position: absolute;
+  width: 1013px;
+  height: 1013px;
+  background: #1b2a33;
+  filter: blur(282px);
+  border-radius: 50%;
+  z-index: -1;
+  top: 670px;
+  left: -430px;
+}
+
 .blog-details {
   margin-top: 55px;
   position: relative;
+  z-index: 1;
 }
 
 .blog-details .left {
@@ -176,11 +189,27 @@ body {
   display: block;
 }
 
+.related-blogs {
+  position: relative;
+}
+
 .related-blogs-title {
   font-weight: 800;
   font-size: 1.875rem;
   line-height: 1.5rem;
   color: #fafcfd;
+}
+
+.related-blogs__blur-circle {
+  position: absolute;
+  width: 611px;
+  height: 611px;
+  background: #1b2a33;
+  filter: blur(282px);
+  border-radius: 50%;
+  top: 540px;
+  left: 90px;
+  z-index: -1;
 }
 
 .related-blogs__cards {
