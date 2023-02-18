@@ -247,6 +247,18 @@ body {
     margin-top: 2rem;
     align-self: flex-end;
   }
+
+  .feedback-form__inputs {
+    flex-direction: column;
+  }
+
+  .feedback-form__inputs > div {
+    width: 100%;
+  }
+
+  .feedback-form input {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 47.9375rem) {
