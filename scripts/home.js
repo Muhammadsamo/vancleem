@@ -1,6 +1,8 @@
 let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".main-nav ul li a");
 
+// To Highlight the NavLink according to current section on Home page
+
 window.onscroll = () => {
   section.forEach((sec) => {
     let top = window.scrollY;

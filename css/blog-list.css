@@ -163,6 +163,14 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: #759eb6;
+  position: relative;
+}
+
+.blog-date::after {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: #759eb6;
 }
 
 .blog-title {
