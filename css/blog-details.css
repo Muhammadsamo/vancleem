@@ -57,6 +57,10 @@ body {
   margin-top: 1.5rem;
 }
 
+.blog-img {
+  width: 100%;
+}
+
 .blog-description {
   font-variant: JIS04;
   font-weight: 400;

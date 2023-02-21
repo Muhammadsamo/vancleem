@@ -136,19 +136,19 @@ body {
 }
 
 .blog-image-3 {
-  background: url("../images/post1.png") center/cover no-repeat border-box;
+  background: url("../images/image3.png") center/cover no-repeat border-box;
 }
 
 .blog-image-4 {
-  background: url("../images/bank\ 1.png") center/cover no-repeat border-box;
+  background: url("../images/image4.png") center/cover no-repeat border-box;
 }
 
 .blog-image-5 {
-  background: url("../images/aircraft\ 1.png") center/cover no-repeat border-box;
+  background: url("../images/image5.png") center/cover no-repeat border-box;
 }
 
 .blog-image-6 {
-  background: url("../images/car\ 1.png") center/cover no-repeat border-box;
+  background: url("../images/image6.png") center/cover no-repeat border-box;
 }
 
 .blog-details {
@@ -488,7 +488,6 @@ body {
   background: rgba(62, 97, 118, 0.2);
   width: 100%;
   height: 35px;
-  resize: none;
   color: #8baec2;
   line-height: 32px;
   font-size: 16px;
