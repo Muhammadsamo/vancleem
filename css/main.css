@@ -279,7 +279,7 @@ a {
 }
 
 .section-home {
-  background-image: url("../images/open-space-office\ 1.webp");
+  background-image: url("../images/home.webp");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -575,20 +575,9 @@ a {
 
 .section-contact {
   position: relative;
-  background-image: url("../images/Rectangle\ 13.png");
+  background-image: url("../images/image7.webp");
   background-size: cover;
   z-index: 1;
-}
-
-.section-contact__backdrop {
-  position: absolute;
-  background-image: url("../images/Rectangle\ 95.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  filter: brightness(0.9);
 }
 
 .section-contact > .container {
@@ -862,6 +851,19 @@ a {
     padding-inline: 0.375rem;
     font-size: 15px;
   }
+
+  .section-home .container {
+    padding-bottom: 3rem;
+  }
+
+  .section-home__left {
+    width: 100%;
+  }
+
+  .section-home__right {
+    display: none !important;
+  }
+
   .tools {
     max-width: 43.75rem;
   }
@@ -895,6 +897,15 @@ a {
     flex-direction: column;
   }
 
+  .contact-form-btn-container {
+    flex-direction: column;
+  }
+
+  .contact-form__submit-text {
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
+
   .contact-form-btn {
     bottom: -3.125rem;
     width: 100%;
@@ -904,17 +915,12 @@ a {
 /* max width 53.125rem media query*/
 
 @media screen and (max-width: 850px) {
-  .main-nav,
-  .section-home__right {
+  .main-nav {
     display: none !important;
   }
 
   .mobile-nav-btn {
     display: block;
-  }
-
-  .section-home__left {
-    width: 100%;
   }
 
   .section-skills__left {
