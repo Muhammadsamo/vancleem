@@ -129,27 +129,27 @@ body {
 }
 
 .blog-image-1 {
-  background: url("../images/image1.png") center/cover no-repeat border-box;
+  background: url("../images/image1.webp") center/cover no-repeat border-box;
 }
 
 .blog-image-2 {
-  background: url("../images/image2.png") center/cover no-repeat border-box;
+  background: url("../images/image2.webp") center/cover no-repeat border-box;
 }
 
 .blog-image-3 {
-  background: url("../images/image3.png") center/cover no-repeat border-box;
+  background: url("../images/image3.webp") center/cover no-repeat border-box;
 }
 
 .blog-image-4 {
-  background: url("../images/image4.png") center/cover no-repeat border-box;
+  background: url("../images/image4.webp") center/cover no-repeat border-box;
 }
 
 .blog-image-5 {
-  background: url("../images/image5.png") center/cover no-repeat border-box;
+  background: url("../images/image5.webp") center/cover no-repeat border-box;
 }
 
 .blog-image-6 {
-  background: url("../images/image6.png") center/cover no-repeat border-box;
+  background: url("../images/image6.webp") center/cover no-repeat border-box;
 }
 
 .blog-details {
@@ -235,7 +235,7 @@ body {
 }
 
 .chatbot-image {
-  background: url("../images/chatbot_image.png") center/cover no-repeat
+  background: url("../images/chatbot_image.webp") center/cover no-repeat
     border-box;
   width: 77px;
   height: 77px;
@@ -298,7 +298,7 @@ body {
 }
 
 #section-4 {
-  background: url("../images/image7.png") center/cover no-repeat border-box;
+  background: url("../images/image7.webp") center/cover no-repeat border-box;
   width: 100vw;
   height: 641px;
   position: relative;
