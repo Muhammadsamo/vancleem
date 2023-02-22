@@ -115,6 +115,7 @@ body {
 }
 
 .blog {
+  position: relative;
   margin-bottom: 54px;
   background: #152128;
   border-radius: 5px;

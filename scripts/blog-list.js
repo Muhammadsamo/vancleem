@@ -77,11 +77,11 @@ $(".tool-name").on("click", function () {
 
   $(".blog").each(function () {
     if ($(this).hasClass(toolId)) {
-      console.log("working if");
-      $(this).removeClass("chatbot_js");
+      $(this).show();
     } else {
-      console.log("working else");
-      $(this).addClass("chatbot_js");
+      $(this).hide();
     }
   });
+
 });
+
