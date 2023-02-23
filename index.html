@@ -74,12 +74,25 @@
     </header>
 
     <main>
+      <!-- Chat-bot -->
+      <!-- Chat-bot Floating-button -->
+      <div class="chatbot-parent">
+        <div class="chatbot">
+          <div class="chatbot-image">
+            <div class="chatbot-online_status"></div>
+          </div>
+          <div class="chatbot-texts">
+            <h1>Xenia</h1>
+            <h2>AI Assistant</h2>
+          </div>
+          <div class="chatbot-cut_icon">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
       <!-- Chatbot Pop-up Window -->
-      <div class="modal-backdrop position-absolute top-0 left-0 w-100 h-100 d-none"></div>
-      <div class="chatbot-modal container d-flex flex-column align-items-center position-absolute">
-        <video class="chatbot-modal__video" src="./videos/chatbot-video.mp4" controls></video>
-        <button class="chatbot-modal__button primary-button">Start Chat</button>
-
+      <div class="modal-backdrop position-fixed top-0 left-0 w-100 h-100 d-none"></div>
+      <div class="chatbot-modal container d-flex flex-column align-items-center position-fixed d-none">
       </div>
       <!-- Section 1 -->
       <section class="section-home" id="home">

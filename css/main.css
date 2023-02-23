@@ -111,7 +111,7 @@ a {
 /* Modal Backdrop */
 
 .modal-backdrop {
-  background: rgba(15, 24, 29, 0.95);
+  background: rgba(15, 24, 28, 0.95);
   z-index: 1000;
 }
 
@@ -126,6 +126,34 @@ a {
   border: 1px solid #273d4b;
   border-radius: 5px;
   padding: 1.25rem 1.5rem;
+  width: 60vw;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  width: 24px;
+  height: 3px;
+  background-color: #759eb6;
+  display: block;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg) translate(2px, -2px);
+}
+
+.chatbot-modal__video {
+  width: 100%;
 }
 
 .chatbot-modal__button {
@@ -141,6 +169,93 @@ a {
   letter-spacing: 0.1em;
   color: #0c0c0f;
   margin-top: 0.875rem;
+}
+
+/* Chatbot floating button */
+
+.chatbot-parent {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -80px;
+  position: fixed;
+  top: 80%;
+  left: 69.5%;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.chatbot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 357px;
+  height: 102px;
+  background: rgba(18, 28, 35, 0.9);
+  border: 1px solid #273d4b;
+  border-radius: 5px;
+}
+
+.chatbot-image {
+  background: url("../images/chatbot_image.webp") center/cover no-repeat
+    border-box;
+  width: 77px;
+  height: 77px;
+  border: 1px solid #8baec2;
+  border-radius: 75px;
+  margin: 0;
+  margin-left: 13px;
+}
+
+.chatbot-online_status {
+  position: relative;
+  left: 53px;
+  top: 62px;
+  width: 12px;
+  height: 12px;
+  background: #75b678;
+  border-radius: 12px;
+}
+
+.prompt {
+  width: 97%;
+  background: rgba(250, 252, 253, 0.9);
+  border-radius: 5px;
+  padding: 5px 6px;
+}
+
+.chatbot-texts {
+  width: 216px;
+}
+
+.chatbot-texts h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fafcfd;
+  margin: 0;
+}
+
+.chatbot-texts h2 {
+  font-weight: 600;
+  font-size: 12px;
+  color: #759eb6;
+  margin: 0;
+}
+
+/* .chatbot_js {
+  display: none;
+} */
+
+.chatbot_js2 {
+  left: 3% !important;
+}
+
+.chatbot-cut_icon i {
+  font-size: 28px;
+  color: #3e6176;
+  position: relative;
+  top: -32px;
+  right: 8px;
+  cursor: pointer;
 }
 
 /* Header */

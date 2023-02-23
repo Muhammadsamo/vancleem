@@ -211,7 +211,7 @@ body {
   border-bottom: 2px solid #759eb6;
 }
 
-.chatbot-parent {
+/* .chatbot-parent {
   display: flex;
   justify-content: flex-end;
   margin-bottom: -80px;
@@ -295,7 +295,7 @@ body {
   top: -32px;
   right: 8px;
   cursor: pointer;
-}
+} */
 
 #section-4 {
   background: url("../images/image7.webp") center/cover no-repeat border-box;
