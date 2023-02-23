@@ -26,6 +26,7 @@ let chatModalVisible = false;
 
 // Chat Modal
 
+
 function showChatModal() {
   chatBotModal.classList.remove("d-none");
   modalBackdrop.classList.remove("d-none");
@@ -150,10 +151,8 @@ $(".chat-submit").on("click", function () {
   }
 });
 
-var parent = $("#allBlogs");
 
 $(".tool-name").on("click", function () {
-  var firstChild = parent.children().first();
   var toolId = $(this).attr("id");
   console.log(toolId);
   $(".tool-name").removeClass("active-tool");
