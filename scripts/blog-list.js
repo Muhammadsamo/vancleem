@@ -69,16 +69,18 @@ $(".chat-submit").on("click", function () {
   }
 });
 
-var parent = $('#allBlogs');
+
 
 $(".tool-name").on("click", function () {
-
-  var firstChild = parent.children().first();
   var toolId = $(this).attr("id");
   console.log(toolId);
   $(".tool-name").removeClass("active-tool");
   $(this).addClass("active-tool");
 
+  $("#allBlogs").removeClass('blogSpace');
+  $("#allBlogs").addClass('filterBlogs');
+
+  
   $(".bloglink").each(function () {
     if ($(this).hasClass(toolId)) {
       $(this).show();
@@ -88,3 +90,7 @@ $(".tool-name").on("click", function () {
   });
 });
 
+$(".pagination li a").on("click", function () {
+  $(".pagination li a").removeClass('active');
+  $(this).addClass("active");
+});
