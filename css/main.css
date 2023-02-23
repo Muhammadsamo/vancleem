@@ -108,6 +108,41 @@ a {
   color: #fafcfd;
 }
 
+/* Modal Backdrop */
+
+.modal-backdrop {
+  background: rgba(15, 24, 29, 0.95);
+  z-index: 1000;
+}
+
+/* Chat-bot Modal */
+
+.chatbot-modal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  background: #121c23;
+  border: 1px solid #273d4b;
+  border-radius: 5px;
+  padding: 1.25rem 1.5rem;
+}
+
+.chatbot-modal__button {
+  background: #759eb6;
+  border: 2px solid #152128;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 45px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #0c0c0f;
+  margin-top: 0.875rem;
+}
+
 /* Header */
 
 .main-header {
@@ -483,9 +518,9 @@ a {
   color: #d4dddf;
 }
 
-/* .skill {
-  margin-block: 0.9375rem;
-} */
+.skill {
+  margin-bottom: 2.3125rem;
+}
 
 .skill-title {
   font-style: normal;
