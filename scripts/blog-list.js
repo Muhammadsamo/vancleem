@@ -68,19 +68,22 @@ $(".chat-submit").on("click", function () {
   }
 });
 
+var parent = $('#allBlogs');
+
 $(".tool-name").on("click", function () {
+
+  var firstChild = parent.children().first();
   var toolId = $(this).attr("id");
   console.log(toolId);
   $(".tool-name").removeClass("active-tool");
   $(this).addClass("active-tool");
 
-  $(".blog").each(function () {
+  $(".bloglink").each(function () {
     if ($(this).hasClass(toolId)) {
-      console.log("working if");
-      $(this).removeClass("chatbot_js");
+      $(this).show();
     } else {
-      console.log("working else");
-      $(this).addClass("chatbot_js");
+      $(this).hide();
     }
   });
 });
+
