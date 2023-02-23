@@ -24,9 +24,6 @@ copyRightSpan.textContent = currentYear;
 let showMenu = false;
 let chatModalVisible = false;
 
-// Chat Modal
-
-
 function showChatModal() {
   chatBotModal.classList.remove("d-none");
   modalBackdrop.classList.remove("d-none");
@@ -108,10 +105,8 @@ xeniaBotBtn.addEventListener("click", () => {
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
-
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
-
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
@@ -146,7 +141,6 @@ $(".chat-submit").on("click", function () {
     $(".chat-paragraphes").html(chatBoxHtml);
   }
 });
-<<<<<<< HEAD
 
 
 $(".tool-name").on("click", function () {
@@ -163,5 +157,3 @@ $(".tool-name").on("click", function () {
     }
   });
 });
-=======
->>>>>>> 3a8e7b1f1f8de439493a7e1d711510c3ec506873
