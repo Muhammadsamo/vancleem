@@ -41,10 +41,6 @@ function hideChatModal() {
   chatModalVisible = false;
 }
 
-modalClose.addEventListener("click", () => {
-  hideChatModal();
-});
-
 modalBackdrop.addEventListener("click", () => {
   hideChatModal();
 });
@@ -98,7 +94,7 @@ contactForm.addEventListener("submit", (e) => {
 chatBotClose.addEventListener("click", () => {
   xeniaBotHidden = true;
   xeniaBotStrictClose = true;
-  xeniaBotBtn.classList.add("chatbot_js");
+  xeniaBotBtn.classList.add("d-none");
   console.log("clicked");
 });
 
@@ -123,7 +119,7 @@ $(window).on("resize scroll", function () {
     if ($("#chat-bot-chat").isInViewport()) {
       $(".chatbot").addClass("chatbot_js2");
     } else {
-      $(".chatbot").removeClass("chatbot_js2 chatbot_js");
+      $(".chatbot").removeClass("chatbot_js2 d-none");
       xeniaBotHidden = false;
     }
   }
@@ -148,22 +144,4 @@ $(".chat-submit").on("click", function () {
     </div>`;
     $(".chat-paragraphes").html(chatBoxHtml);
   }
-});
-
-var parent = $("#allBlogs");
-
-$(".tool-name").on("click", function () {
-  var firstChild = parent.children().first();
-  var toolId = $(this).attr("id");
-  console.log(toolId);
-  $(".tool-name").removeClass("active-tool");
-  $(this).addClass("active-tool");
-
-  $(".bloglink").each(function () {
-    if ($(this).hasClass(toolId)) {
-      $(this).show();
-    } else {
-      $(this).hide();
-    }
-  });
 });
