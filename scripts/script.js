@@ -42,10 +42,6 @@ function hideChatModal() {
   chatModalVisible = false;
 }
 
-modalClose.addEventListener("click", () => {
-  hideChatModal();
-});
-
 modalBackdrop.addEventListener("click", () => {
   hideChatModal();
 });
@@ -99,7 +95,7 @@ contactForm.addEventListener("submit", (e) => {
 chatBotClose.addEventListener("click", () => {
   xeniaBotHidden = true;
   xeniaBotStrictClose = true;
-  xeniaBotBtn.classList.add("chatbot_js");
+  xeniaBotBtn.classList.add("d-none");
   console.log("clicked");
 });
 
@@ -124,7 +120,7 @@ $(window).on("resize scroll", function () {
     if ($("#chat-bot-chat").isInViewport()) {
       $(".chatbot").addClass("chatbot_js2");
     } else {
-      $(".chatbot").removeClass("chatbot_js2 chatbot_js");
+      $(".chatbot").removeClass("chatbot_js2 d-none");
       xeniaBotHidden = false;
     }
   }
@@ -150,6 +146,7 @@ $(".chat-submit").on("click", function () {
     $(".chat-paragraphes").html(chatBoxHtml);
   }
 });
+<<<<<<< HEAD
 
 
 $(".tool-name").on("click", function () {
@@ -166,3 +163,5 @@ $(".tool-name").on("click", function () {
     }
   });
 });
+=======
+>>>>>>> 3a8e7b1f1f8de439493a7e1d711510c3ec506873
