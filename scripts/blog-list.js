@@ -1,28 +1,28 @@
-let nexusBotBtn = document.querySelector(".chatbot");
+let xeniaBotBtn = document.querySelector(".chatbot");
 let chatBotChat = document.querySelector("section-4_chatbot");
 let chatBotClose = document.querySelector(".chatbot-cut_icon");
 let chatTextArea = document.querySelector(".chat-textarea");
 let chatPara = document.querySelector(".chat-paragraphes");
 let chatBoxHtml = "";
-let nexusBotHidden = false;
-let nexusBotStrictClose = false;
+let xeniaBotHidden = false;
+let xeniaBotStrictClose = false;
 
 chatBotClose.addEventListener("click", () => {
-  nexusBotHidden = true;
-  nexusBotStrictClose = true;
-  nexusBotBtn.classList.add("chatbot_js");
+  xeniaBotHidden = true;
+  xeniaBotStrictClose = true;
+  xeniaBotBtn.classList.add("chatbot_js");
   console.log("clicked");
 });
 
-nexusBotBtn.addEventListener("click", () => {
-  if (!nexusBotHidden) {
+BotBtn.addEventListener("click", () => {
+  if (!xeniaBotHidden) {
     window.scrollTo({
       left: 0,
       top: document.body.scrollHeight,
       behavior: "smooth",
     });
-    nexusBotBtn.classList.add("chatbot_js");
-    nexusBotHidden = true;
+    xeniaBotBtn.classList.add("chatbot_js");
+    xeniaBotHidden = true;
   }
 });
 
@@ -37,13 +37,12 @@ $.fn.isInViewport = function () {
 };
 
 $(window).on("resize scroll", function () {
-  if (!nexusBotStrictClose) {
+  if (!xeniaBotStrictClose) {
     if ($("#chat-bot-chat").isInViewport()) {
       $(".chatbot").addClass("chatbot_js2");
-      // nexusBotHidden = true;
     } else {
       $(".chatbot").removeClass("chatbot_js2 chatbot_js");
-      nexusBotHidden = false;
+      xeniaBotHidden = false;
     }
   }
 });
@@ -51,7 +50,7 @@ $(window).on("resize scroll", function () {
 $(window).on("load", function () {
   if ($("#chat-bot-chat").isInViewport()) {
     $(".chatbot").addClass("chatbot_js");
-    nexusBotHidden = true;
+    xeniaBotHidden = true;
   }
 });
 
