@@ -24,8 +24,6 @@ copyRightSpan.textContent = currentYear;
 let showMenu = false;
 let chatModalVisible = false;
 
-// Chat Modal
-
 function showChatModal() {
   chatBotModal.classList.remove("d-none");
   modalBackdrop.classList.remove("d-none");
