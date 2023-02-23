@@ -76,6 +76,11 @@ body {
 }
 /* section-3 */
 
+.active {
+  color: #759eb6;
+  border-bottom: 2px solid #759eb6;
+}
+
 .blog-list {
   position: relative;
   margin: 0px;
@@ -108,10 +113,18 @@ body {
 .section-3_flex__container___1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   overflow: hidden;
   position: relative;
   z-index: 1;
+}
+
+.blogSpace {
+  justify-content: space-between;
+}
+
+.filterBlogs {
+  justify-content: flex-start;
+  gap: 3.3125rem;
 }
 
 .blog {
