@@ -205,7 +205,7 @@ body {
 }
 
 .pagination {
-  margin-top: 42px;
+  margin-block: 2.625rem 10.4375rem;
   display: flex;
   align-items: center;
   justify-content: center;

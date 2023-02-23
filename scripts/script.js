@@ -104,44 +104,43 @@ xeniaBotBtn.addEventListener("click", () => {
   }
 });
 
-$.fn.isInViewport = function () {
-  var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight();
+// $.fn.isInViewport = function () {
+//   var elementTop = $(this).offset().top;
+//   var elementBottom = elementTop + $(this).outerHeight();
 
-  var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
+//   var viewportTop = $(window).scrollTop();
+//   var viewportBottom = viewportTop + $(window).height();
 
-  return elementBottom > viewportTop && elementTop < viewportBottom;
-};
+//   return elementBottom > viewportTop && elementTop < viewportBottom;
+// };
 
-$(window).on("resize scroll", function () {
-  if (!xeniaBotStrictClose) {
-    if ($("#chat-bot-chat").isInViewport()) {
-      $(".chatbot").addClass("chatbot_js2");
-    } else {
-      $(".chatbot").removeClass("chatbot_js2 d-none");
-      xeniaBotHidden = false;
-    }
-  }
-});
+// $(window).on("resize scroll", function () {
+//   if (!xeniaBotStrictClose) {
+//     if ($("#chat-bot-chat").isInViewport()) {
+//       $(".chatbot").addClass("chatbot_js2");
+//     } else {
+//       $(".chatbot").removeClass("chatbot_js2");
+//     }
+//   }
+// });
 
-$(window).on("load", function () {
-  if ($("#chat-bot-chat").isInViewport()) {
-    $(".chatbot").addClass("chatbot_js");
-    xeniaBotHidden = true;
-  }
-});
+// $(window).on("load", function () {
+//   if ($("#chat-bot-chat").isInViewport()) {
+//     $(".chatbot").addClass("chatbot_js");
+//     xeniaBotHidden = true;
+//   }
+// });
 
-$(".chat-submit").on("click", function () {
-  if (chatTextArea.value !== "" && chatTextArea.value !== null) {
-    console.log(chatTextArea.value);
+// $(".chat-submit").on("click", function () {
+//   if (chatTextArea.value !== "" && chatTextArea.value !== null) {
+//     console.log(chatTextArea.value);
 
-    chatBoxHtml +=
-      `<div class="chat-paragraph">
-      <p>` +
-      chatTextArea.value +
-      `</p>
-    </div>`;
-    $(".chat-paragraphes").html(chatBoxHtml);
-  }
-});
+//     chatBoxHtml +=
+//       `<div class="chat-paragraph">
+//       <p>` +
+//       chatTextArea.value +
+//       `</p>
+//     </div>`;
+//     $(".chat-paragraphes").html(chatBoxHtml);
+//   }
+// });
