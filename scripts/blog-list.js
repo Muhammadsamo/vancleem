@@ -86,7 +86,8 @@ $(".tool-name").on("click", function () {
   });
 });
 
-$(".pagination li a").on("click", function () {
+$(".pagination li a").on("click", function (event) {
+  event.preventDefault();
   $(".pagination li a").removeClass("active");
   $(this).addClass("active");
 });

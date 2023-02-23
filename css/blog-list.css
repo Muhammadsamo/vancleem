@@ -78,7 +78,7 @@ body {
 
 .active {
   color: #759eb6;
-  border-bottom: 2px solid #759eb6;
+  border: none;
 }
 
 .blog-list {
