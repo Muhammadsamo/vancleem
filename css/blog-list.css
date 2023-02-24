@@ -205,7 +205,7 @@ body {
 }
 
 .pagination {
-  margin-block: 2.625rem 10.4375rem;
+  margin-block: 2.625rem 5.4375rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -548,7 +548,7 @@ body {
   background: transparent;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 13px;
   height: 13px;
   background: #0d1518;
@@ -560,12 +560,12 @@ body {
   width: 14px;
   height: 14px;
   background: #273d4b;
-}
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #4a5962;
-}
+} */
 
 /* media queries */
 
@@ -624,10 +624,6 @@ body {
 }
 
 @media screen and (max-width: 61.875rem) {
-  /* .chatbot {
-    left: 66.7%;
-  } */
-
   .main-header_logo h1 {
     font-size: 18px;
   }
@@ -709,22 +705,6 @@ body {
   .main-header_logo {
     margin-right: 100px;
   }
-
-  .chatbot {
-    top: 86%;
-    left: 72%;
-    width: 109px;
-    height: 109px;
-    border-radius: 50%;
-  }
-
-  .chatbot-texts {
-    display: none;
-  }
-
-  .chatbot-cut_icon i {
-    top: -40px;
-  }
 }
 
 @media screen and (max-width: 35.6rem) {
@@ -732,9 +712,7 @@ body {
     font-size: 35px;
     line-height: 40px;
   }
-  .chatbot {
-    left: 60%;
-  }
+
   .main-header_logo {
     margin-right: 36px;
   }
