@@ -8,9 +8,7 @@ const contactFormSubmitText = document.querySelector(
   ".contact-form__submit-text"
 );
 // Chatbot Selectors
-const modalClose = document.querySelector(".modal-close");
 const chatBotModal = document.querySelector(".chatbot-modal");
-const modalBackdrop = document.querySelector(".modal-backdrop");
 let xeniaBotBtn = document.querySelector(".chatbot");
 let chatBotChat = document.querySelector("section-4_chatbot");
 let chatBotClose = document.querySelector(".chatbot-cut_icon");
@@ -26,22 +24,16 @@ let chatModalVisible = false;
 
 function showChatModal() {
   chatBotModal.classList.remove("d-none");
-  modalBackdrop.classList.remove("d-none");
   xeniaBotBtn.classList.add("d-none");
   xeniaBotHidden = true;
   chatModalVisible = true;
 }
 function hideChatModal() {
   chatBotModal.classList.add("d-none");
-  modalBackdrop.classList.add("d-none");
   xeniaBotBtn.classList.remove("d-none");
   xeniaBotHidden = false;
   chatModalVisible = false;
 }
-
-modalBackdrop.addEventListener("click", () => {
-  hideChatModal();
-});
 
 // Function to open Mobile Nav menu
 

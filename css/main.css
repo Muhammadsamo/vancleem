@@ -725,13 +725,13 @@ a {
 
 .section-contact {
   position: relative;
-  background-image: url("../images/image7.webp");
+  background-image: url("../images/home.webp");
   background-size: cover;
   z-index: 1;
 }
 
 .section-contact > .container {
-  min-height: 48.4375rem;
+  min-height: 37rem;
   padding-block: 4.625rem;
 }
 
