@@ -11,25 +11,6 @@ p {
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 13px;
-  height: 13px;
-  background: #0d1518;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  width: 14px;
-  height: 14px;
-  background: #273d4b;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #4a5962;
-}
-
 body {
   font-family: "Manrope", sans-serif;
   font-size: 100% !important;
@@ -132,35 +113,37 @@ a {
 .modal-backdrop {
   background: rgba(15, 24, 28, 0.95);
   z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Chat-bot Modal */
 
 .chatbot-modal {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1001;
-  background: #121c23;
-  border: 1px solid #273d4b;
-  border-radius: 5px;
   padding: 1.25rem 1.5rem;
-  width: 60vw;
+  width: 517px;
+  height: 542px;
+  right: 50px;
+  bottom: 40px;
 }
 
 .modal-close {
   position: absolute;
-  top: 14px;
-  right: 0;
+  top: 30px;
+  right: 10px;
   cursor: pointer;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: "";
-  width: 24px;
+  width: 30px;
   height: 3px;
-  background-color: #759eb6;
+  background-color: #3E6176;
   display: block;
 }
 
@@ -190,6 +173,50 @@ a {
   margin-top: 0.875rem;
 }
 
+
+.terms-modal {
+  max-width: 802px;
+  width: 80vw;
+  height: 509px;
+  background: #121C23;
+  border: 1px solid #273D4B;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  z-index: 1000;
+
+}
+
+.terms-modal_heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  color: #FAFCFD;
+  margin-bottom: 23px;
+
+}
+
+.terms-modal_body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  overflow-y: scroll;
+  color: #FAFCFD;
+  max-height: 401px;
+  padding-right: 30px;
+}
+.terms-modal_body p {
+  margin-block: 1rem;
+}
+
+.terms-modal_close {
+  right: 30px;
+  top: 30px;
+}
+
 /* Chatbot floating button */
 
 .chatbot-parent {
@@ -197,8 +224,8 @@ a {
   justify-content: flex-end;
   margin-bottom: -80px;
   position: fixed;
-  top: 80%;
-  left: 69.5%;
+  top: 85%;
+  right: 70px;
   z-index: 999;
   cursor: pointer;
 }
@@ -207,7 +234,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 357px;
+  width: 240px;
   height: 102px;
   background: rgba(18, 28, 35, 0.9);
   border: 1px solid #273d4b;
@@ -215,8 +242,6 @@ a {
 }
 
 .chatbot-image {
-  /* background: url("../images/chatbot_image.webp") center/cover no-repeat
-    border-box; */
   width: 77px;
   height: 77px;
   border: 1px solid #8baec2;
@@ -228,7 +253,7 @@ a {
 .chatbot-online_status {
   position: relative;
   right: -60px;
-  bottom: 16px;
+  bottom: 20px;
   width: 12px;
   height: 12px;
   background: #75b678;
@@ -242,15 +267,12 @@ a {
   padding: 5px 6px;
 }
 
-.chatbot-texts {
-  width: 216px;
-}
-
 .chatbot-texts h1 {
   font-size: 24px;
   font-weight: 700;
   color: #fafcfd;
   margin: 0;
+  letter-spacing: 0.2em;
 }
 
 .chatbot-texts h2 {
@@ -258,6 +280,7 @@ a {
   font-size: 12px;
   color: #759eb6;
   margin: 0;
+  letter-spacing: 0.1em;
 }
 
 /* .chatbot_js {
@@ -627,7 +650,6 @@ a {
 
 .section-skills__backdrop {
   position: absolute;
-  background-image: url("../images/Rectangle\ 90.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -695,7 +717,6 @@ a {
 
 .section-use-cases {
   padding: 4.625rem 0;
-  background: url("../images/Rectangle\ 98.png");
   position: relative;
 }
 
@@ -744,13 +765,13 @@ a {
 
 .section-contact {
   position: relative;
-  background-image: url("../images/home.webp");
+  background-image: url("../images/image7.webp");
   background-size: cover;
   z-index: 1;
 }
 
 .section-contact > .container {
-  min-height: 37rem;
+  min-height: 48.4375rem;
   padding-block: 4.625rem;
 }
 
@@ -988,8 +1009,8 @@ a {
 .social-links svg {
   object-fit: contain;
 }
+/* *********************** Media Queries start here ************************* */
 
-/* max width 600 media query */
 
 @media screen and (max-width: 850px) {
   body {
@@ -997,20 +1018,23 @@ a {
   }
 }
 
-/* max width 87.5rem media query */
 @media screen and (max-width: 1400px) {
   .tools {
     max-width: 58.75rem;
   }
 }
 
-/* max width 75rem media query */
 @media screen and (max-width: 1200px) {
   .logo {
     letter-spacing: 0.1em;
   }
+
+  .chatbot-parent{
+    right: 115px;
+  }
+
 }
-/* max width 62rem media query */
+
 @media screen and (max-width: 992px) {
   .logo {
     font-size: 16px;
@@ -1019,6 +1043,10 @@ a {
   .main-nav__list__item {
     padding-inline: 0.375rem;
     font-size: 15px;
+  }
+
+  .chatbot-parent{
+    right: 138px;
   }
 
   .section-home .container {
@@ -1119,6 +1147,17 @@ a {
     max-width: 32.5rem;
   }
 
+  .chatbot-parent{
+    right: 115px;
+  }
+
+  .chatbot-modal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
   .chatbot {
     top: 86%;
     left: 72%;
@@ -1134,13 +1173,20 @@ a {
   .chatbot-cut_icon i {
     top: -40px;
   }
+
 }
 
-/* max width 35.625rem media query */
+@media screen and (max-width: 600px) {
+  .chatbot-parent{
+    right: 36px;
+  }
+}
+
 @media screen and (max-width: 570px) {
   .container {
     padding-inline: 1.75rem !important;
   }
+
   .copy-right-text {
     font-size: 16px;
   }
@@ -1177,5 +1223,8 @@ a {
 
   .section-contact__left__contact-title {
     font-size: 16px;
+  }
+  .terms-modal_heading {
+    font-size: 20px;
   }
 }
